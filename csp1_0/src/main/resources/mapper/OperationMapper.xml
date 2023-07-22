@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="upc.csp1_0.dao.OperationMapper">
+
+    <insert id="insertFlow" >
+        INSERT INTO flow (flow_id,node_id,table_id,priority,flow_name,source_ip,out_port,type)
+        VALUES (#{flow_id},#{node_id},#{table_id},#{priority},#{flow_name},#{source_ip},#{output_port},"INSERT");
+    </insert>
+    <insert id="addFlow" >
+        INSERT INTO flow VALUES (#{flow_id},#{node_id},#{table_id},#{priority},#{flow_name},#{source_ip},#{output_port},"INSERT");
+    </insert>
+
+    <delete id="deleteFlow">
+        DELETE FROM flow WHERE (flow_id = #{flow_id} AND node_id = #{node_id});
+    </delete>
+
+    <select id="isExistInsert" parameterType="String" resultType="upc.csp1_0.model.FlowOfInsert">
+        SELECT * FROM flow WHERE flow_id = #{flow_id} OR (source_ip = #{source_ip} AND out_port = #{output_port}) ORDER BY flow_id LIMIT 1
+    </select>
+
+    <select id="isConflictInsert" parameterType="String" resultType="upc.csp1_0.model.FlowOfInsert">
+        SELECT * FROM flow WHERE type = "INSERT" AND source_ip = #{source_ip} ORDER BY flow_id LIMIT 1
+    </select>
+    <select id="findAllFlow" resultType="FlowCache">
+        SELECT * FROM flow LIMIT #{start},#{pageSize};
+    </select>
+    <select id="getFlowCount" resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM flow
+    </select>
+
+
+</mapper>

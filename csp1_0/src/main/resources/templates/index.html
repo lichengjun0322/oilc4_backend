@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Web UI Kit &amp; Dashboard Template based on Bootstrap">
+	<meta name="author" content="AdminKit">
+	<meta name="keywords" content="adminkit, bootstrap, web ui kit, dashboard template, admin template">
+
+	<link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+
+	<title>系统主页</title>
+
+	<link href="css/app.css" rel="stylesheet">
+</head>
+
+<body background="bg2.jpg">
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="index.html">
+          <span class="align-middle">网络安全智能防护系统</span>
+        </a>
+
+				<ul class="sidebar-nav">
+
+
+<!--					<li class="sidebar-header">-->
+<!--						<a class="sidebar-header" href="index0">-->
+<!--							<span>下层网络安全智能防护系统</span>-->
+<!--						</a>-->
+<!--					</li>-->
+
+					<li class="sidebar-header">
+						功能列表
+					</li>
+
+					<li class="sidebar-item active">
+						<a class="sidebar-link" href="/index">
+              <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">系统主页</span>
+            </a>
+					</li>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="newPage">
+							<i class="align-middle" data-feather="list"></i> <span class="align-middle">流量分析</span>
+						</a>
+					</li>
+
+<!--					<li class="sidebar-item">-->
+<!--						<a class="sidebar-link" href="index0">-->
+<!--							<i class="align-middle" data-feather="map"></i> <span class="align-middle">下层网络安全智能防护系统</span>-->
+<!--						</a>-->
+<!--					</li>-->
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="changeRoute">
+              <i class="align-middle" data-feather="user"></i> <span class="align-middle">下发流表</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="/deleteFlow">
+              <i class="align-middle" data-feather="settings"></i> <span class="align-middle">删除流表</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="/graph">
+              <i class="align-middle" data-feather="credit-card"></i> <span class="align-middle">信息图谱</span>
+            </a>
+					</li>
+
+
+					<li class="sidebar-header">
+						消息中心
+					</li>
+					<li class="sidebar-item">
+						<a href="#ui" data-toggle="collapse" class="sidebar-link collapsed">
+              <i class="align-middle" data-feather="briefcase"></i> <span class="align-middle">请求消息</span>
+            </a>
+						<ul id="ui" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="/flow-cache-view">待批申请</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="/isLegal">预警信息</a></li>
+<!--							<li class="sidebar-item"><a class="sidebar-link" href="ui-cards.html">Cards</a></li>-->
+<!--							<li class="sidebar-item"><a class="sidebar-link" href="ui-general.html">General</a></li>-->
+<!--							<li class="sidebar-item"><a class="sidebar-link" href="ui-grid.html">Grid</a></li>-->
+<!--							<li class="sidebar-item"><a class="sidebar-link" href="ui-modals.html">Modals</a></li>-->
+<!--							<li class="sidebar-item"><a class="sidebar-link" href="ui-typography.html">Typography</a></li>-->
+						</ul>
+					</li>
+
+<!--					<li class="sidebar-item">-->
+<!--						<a class="sidebar-link" href="icons-feather.html">-->
+<!--              <i class="align-middle" data-feather="coffee"></i> <span class="align-middle">Icons</span>-->
+<!--            </a>-->
+<!--					</li>-->
+
+<!--					<li class="sidebar-item">-->
+<!--						<a href="#forms" data-toggle="collapse" class="sidebar-link collapsed">-->
+<!--              <i class="align-middle" data-feather="check-circle"></i> <span class="align-middle">Forms</span>-->
+<!--            </a>-->
+<!--						<ul id="forms" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">-->
+<!--							<li class="sidebar-item"><a class="sidebar-link" href="forms-layouts.html">Form Layouts</a></li>-->
+<!--							<li class="sidebar-item"><a class="sidebar-link" href="forms-basic-inputs.html">Basic Inputs</a></li>-->
+<!--						</ul>-->
+<!--					</li>-->
+
+<!--					<li class="sidebar-item">-->
+<!--						<a class="sidebar-link" href="tables-bootstrap.html">-->
+<!--              <i class="align-middle" data-feather="list"></i> <span class="align-middle">Tables</span>-->
+<!--            </a>-->
+<!--					</li>-->
+
+
+
+<!--					<li class="sidebar-item">-->
+<!--						<a class="sidebar-link" href="maps-google.html">-->
+<!--              <i class="align-middle" data-feather="map"></i> <span class="align-middle">Maps</span>-->
+<!--            </a>-->
+<!--					</li>-->
+<!--				</ul>-->
+
+<!--				<div class="sidebar-cta">-->
+<!--					<div class="sidebar-cta-content">-->
+<!--						<strong class="d-inline-block mb-2">Upgrade to Pro</strong>-->
+5<!--							Are you looking for more components?-->
+<!--						</div>-->
+<!--						<a href="#" target="_blank" class="btn btn-outline-primary btn-block">Upgrade</a>-->
+<!--					</div>-->
+<!--				</div>-->
+			</div>
+		</nav>
+
+		<div class="main">
+			<nav class="navbar navbar-expand navbar-light navbar-bg">
+				<a class="sidebar-toggle d-flex">
+          <i class="hamburger align-self-center"></i>
+        </a>
+
+				<form class="form-inline d-none d-sm-inline-block">
+					<div class="input-group input-group-navbar">
+						<input type="text" class="form-control" placeholder="Search…" aria-label="Search">
+						<div class="input-group-append">
+							<button class="btn" type="button">
+                <i class="align-middle" data-feather="search"></i>
+              </button>
+						</div>
+					</div>
+				</form>
+
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align">
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-toggle="dropdown">
+								<div class="position-relative">
+									<i class="align-middle" data-feather="bell"></i>
+									<span class="indicator">4</span>
+								</div>
+							</a>
+							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0" aria-labelledby="alertsDropdown">
+								<div class="dropdown-menu-header">
+									您有以下未读消息
+								</div>
+								<div class="list-group">
+									<a href="/flow-cache-view" class="list-group-item">
+										<div class="row no-gutters align-items-center">
+											<div class="col-2">
+												<i class="text-warning" data-feather="bell"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">待批申请</div>
+											</div>
+										</div>
+									</a>
+									<a href="/isLegal" class="list-group-item">
+										<div class="row no-gutters align-items-center">
+											<div class="col-2">
+												<i class="text-primary" data-feather="home"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">操作预警</div>
+												<!--<div class="text-muted small mt-1">5h ago</div>-->
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row no-gutters align-items-center">
+											<div class="col-2">
+												<i class="text-success" data-feather="user-plus"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">New connection</div>
+												<div class="text-muted small mt-1">Christina accepted your request.</div>
+												<div class="text-muted small mt-1">14h ago</div>
+											</div>
+			number							</div>
+									</a>
+								</div>
+								<div class="dropdown-menu-footer">
+									<a href="#" class="text-muted">Show all notifications</a>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle" href="#" id="messagesDropdown" data-toggle="dropdown">
+								<div class="position-relative">
+									<i class="align-middle" data-feather="message-square"></i>
+								</div>
+							</a>
+							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0" aria-labelledby="messagesDropdown">
+								<div class="dropdown-menu-header">
+									<div class="position-relative">
+										4 New Messages
+									</div>
+								</div>
+		number						<div class="list-group">
+									<a href="#" class="list-group-item">
+										<div class="row no-gutters align-items-center">
+											<div class="col-2">
+												<img src="img/avatars/avatar-5.jpg" class="avatar img-fluid rounded-circle" alt="Vanessa Tucker">
+											</div>
+											<div class="col-10 pl-2">
+												<div class="text-dark">Vanessa Tucker</div>
+												<div class="text-muted small mt-1">Nam pretium turpis et arcu. Duis arcu tortor.</div>
+												<div class="text-muted small mt-1">15m ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row no-gutters align-items-center">
+											<div class="col-2">
+												<img src="img/avatars/avatar-2.jpg" class="avatar img-fluid rounded-circle" alt="William Harris">
+											</div>
+											<div class="col-10 pl-2">
+												<div class="text-dark">William Harris</div>
+												<div class="text-muted small mt-1">Curabitur ligula sapien euismod vitae.</div>
+												<div class="text-muted small mt-1">2h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row no-gutters align-items-center">
+											<div class="col-2">
+												<img src="img/avatars/avatar-4.jpg" class="avatar img-fluid rounded-circle" alt="Christina Mason">
+											</div>
+											<div class="col-10 pl-2">
+												<div class="text-dark">Christina Mason</div>
+												<div class="text-muted small mt-1">Pellentesque auctor neque nec urna.</div>
+												<div class="text-muted small mt-1">4h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row no-gutters align-items-center">
+											<div class="col-2">
+												<img src="img/avatars/avatar-3.jpg" class="avatar img-fluid rounded-circle" alt="Sharon Lessman">
+											</div>
+											<div class="col-10 pl-2">
+												<div class="text-dark">Sharon Lessman</div>
+												<div class="text-muted small mt-1">Aenean tellus metus, bibendum sed, posuere ac, mattis non.</div>
+												<div class="text-muted small mt-1">5h ago</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="dropdown-menu-footer">
+									<a href="#" class="text-muted">Show all messages</a>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-toggle="dropdown">
+                <i class="align-middle" data-feather="settings"></i>
+              </a>
+
+							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-toggle="dropdown">
+                <img src="img/avatars/avatar.jpg" class="avatar img-fluid rounded mr-1" alt="Charles Hall" /> <span th:text="${name}" class="text-dark">Charles Hall</span>
+              </a>
+							<div class="dropdown-menu dropdown-menu-right">
+								<a class="dropdown-item" href="pages-profile.html"><i class="align-middle mr-1" data-feather="user"></i> Profile</a>
+								<a class="dropdown-item" href="#"><i class="align-middle mr-1" data-feather="pie-chart"></i> Analytics</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="pages-settings.html"><i class="align-middle mr-1" data-feather="settings"></i> Settings & Privacy</a>
+								<a class="dropdown-item" href="#"><i class="align-middle mr-1" data-feather="help-circle"></i> Help Center</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Log out</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<main class="content">
+				<div class="container-fluid p-0">
+
+					<div class="row mb-2 mb-xl-3">
+						<div class="col-auto d-none d-sm-block">
+							<h3>网络实时状态</h3>
+						</div>
+
+<!--						<div class="col-auto ml-auto text-right mt-n1">-->
+<!--							<nav aria-label="breadcrumb">-->
+<!--								<ol class="breadcrumb bg-transparent p-0 mt-1 mb-0">-->
+<!--									<li class="breadcrumb-item"><a href="#">AdminKit</a></li>-->
+<!--									<li class="breadcrumb-item"><a href="#">Dashboards</a></li>-->
+<!--									<li class="breadcrumb-item active" aria-current="page">Analytics</li>-->
+<!--								</ol>-->
+<!--							</nav>-->
+<!--						</div>-->
+
+					</div>
+				</div>
+
+
+
+
+
+					<div class="row">
+						<div class="col-xl-6 col-xxl-5 d-flex">
+							<div class="w-100">
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="card">
+											<div class="card-body">
+												<h5 class="card-title mb-4">登录人数</h5>
+												<h1 class="display-5 mt-1 mb-3">1</h1>
+												<div class="mb-1">
+													<span class="text-success"> <i class="mdi mdi-arrow-bottom-right"></i> 100% </span>
+													<span class="text-muted">监测情况</span>
+												</div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-body">
+												<h5 class="card-title mb-4">交换机数量</h5>
+												<h1 th:text="${switchNumber}" class="display-5 mt-1 mb-3">1</h1>
+												<div class="mb-1">
+													<span class="text-success" > <i class="mdi mdi-arrow-bottom-right"></i> 100% </span>
+													<span class="text-muted">监测情况</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="card">
+											<div class="card-body">
+												<h5 class="card-title mb-4">控制器数量</h5>
+												<h1 class="display-5 mt-1 mb-3">1</h1>
+												<div class="mb-1">
+													<span class="text-success"> <i class="mdi mdi-arrow-bottom-right"></i> 100% </span>
+													<span class="text-muted">监测情况</span>
+												</div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-body">
+												<h5 class="card-title mb-4">终端数量</h5>
+												<h1 th:text="${PcNumber}" class="display-5 mt-1 mb-3">64</h1>
+												<div class="mb-1">
+													<span class="text-success"> <i class="mdi mdi-arrow-bottom-right"></i>100%</span>
+													<span class="text-muted">监测情况</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-xl-6 col-xxl-7">
+							<div class="card flex-fill w-100">
+								<div class="card-header">
+
+									<h5 class="card-title mb-0">告警信息统计</h5>
+								</div>
+								<div class="card-body py-3">
+									<div class="chart chart-sm">
+										<canvas id="chartjs-dashboard-line"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+<!--					<div class="row">-->
+<!--						<div class="col-12 col-md-6 col-xxl-3 d-flex order-2 order-xxl-3">-->
+<!--							<div class="card flex-fill w-100">-->
+<!--								<div class="card-header">-->
+
+<!--									<h5 class="card-title mb-0">交换机分布统计</h5>-->
+<!--								</div>-->
+<!--								<div class="card-body d-flex">-->
+<!--									<div class="align-self-center w-100">-->
+<!--										<div class="py-3">-->
+<!--											<div class="chart chart-xs">-->
+<!--												<canvas id="chartjs-dashboard-pie"></canvas>-->
+<!--											</div>-->
+<!--										</div>-->
+
+<!--										<table class="table mb-0">-->
+<!--											<h5>前三名</h5>-->
+<!--											<tbody>-->
+<!--												<tr>-->
+<!--													<td>湖南</td>-->
+<!--													<td class="text-right">2</td>-->
+<!--												</tr>-->
+<!--												<tr>-->
+<!--													<td>上海</td>-->
+<!--													<td class="text-right">1</td>-->
+<!--												</tr>-->
+<!--												<tr>-->
+<!--													<td>山东</td>-->
+<!--													<td class="text-right">1</td>-->
+<!--												</tr>-->
+
+<!--											</tbody>-->
+<!--										</table>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--						<div class="col-12 col-md-12 col-xxl-6 d-flex order-3 order-xxl-2">-->
+<!--							<div class="card flex-fill w-100">-->
+<!--								<div class="card-header">-->
+
+<!--									<h5 class="card-title mb-0">交换机分布</h5>-->
+<!--								</div>-->
+<!--								<div class="card-body px-4">-->
+<!--									<div id="world_map" style="height:350px;"></div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--						<div class="col-12 col-md-6 col-xxl-3 d-flex order-1 order-xxl-1">-->
+<!--							<div class="card flex-fill">-->
+<!--								<div class="card-header">-->
+
+<!--									<h5 class="card-title mb-0">日历</h5>-->
+<!--								</div>-->
+<!--								<div class="card-body d-flex">-->
+<!--									<div class="align-self-center w-100">-->
+<!--										<div class="chart">-->
+<!--											<div id="datetimepicker-dashboard"></div>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+
+					<div class="row">
+						<div class="col-12 col-lg-8 col-xxl-9 d-flex">
+							<div class="card flex-fill">
+								<div class="card-header">
+
+									<h5 class="card-title mb-0">最近操作记录</h5>
+								</div>
+								<table class="table table-hover my-0" id="table01">
+									<thead>
+										<tr>
+											<th>用户</th>
+											<th class="d-none d-xl-table-cell">日期</th>
+											<th class="d-none d-xl-table-cell">操作</th>
+											<th>状态</th>
+											<!--<th class="d-none d-md-table-cell">Assignee</th>-->
+										</tr>
+									</thead>
+									<tbody id="tbody01">
+
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="col-12 col-lg-4 col-xxl-3 d-flex">
+							<div class="card flex-fill w-100">
+								<div class="card-header">
+
+									<h5 class="card-title mb-0">本月管理员操作统计</h5>
+								</div>
+								<div class="card-body d-flex w-100">
+									<div class="align-self-center chart chart-lg">
+										<canvas id="chartjs-dashboard-bar"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+<!--				</div>-->
+			</main>
+
+		</div>
+	</div>
+
+	<script src="js/vendor.js"></script>
+	<script src="js/app.js"></script>
+
+
+
+	<script th:inline="javascript">
+		var warnStic = [[${warnStatistics}]];
+		var data2 = new Array(warnStic.length);
+		// var data1 = new Array(warnStic.length);
+
+		for(var i = 0;i < warnStic.length;i++){
+			data2[i] = warnStic[i]["number"];
+			// data1[i] = warnStic[i]["number"];
+
+		}
+		console.log(data2);
+		$(function() {
+			var ctx = document.getElementById('chartjs-dashboard-line').getContext("2d");
+			var gradient = ctx.createLinearGradient(0, 0, 0, 225);
+			gradient.addColorStop(0, 'rgba(215, 227, 244, 1)');
+			gradient.addColorStop(1, 'rgba(215, 227, 244, 0)');
+			// Line chart
+			new Chart(document.getElementById("chartjs-dashboard-line"), {
+				type: 'line',
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+					datasets: [{
+						label: "告警数:",
+						fill: true,
+						backgroundColor: gradient,
+						borderColor: window.theme.primary,
+						data:data2
+
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					tooltips: {
+						intersect: false
+					},
+					hover: {
+						intersect: true
+					},
+					plugins: {
+						filler: {
+							propagate: false
+						}
+					},
+					scales: {
+						xAxes: [{
+							reverse: true,
+							gridLines: {
+								color: "rgba(0,0,0,0.0)"
+							}
+						}],
+						yAxes: [{
+							ticks: {
+								stepSize: 1000
+							},
+							display: true,
+							borderDash: [3, 3],
+							gridLines: {
+								color: "rgba(0,0,0,0.0)"
+							}
+						}]
+					}
+				}
+			}
+
+
+			);
+		});
+	</script>
+
+<!--	<script>-->
+<!--		$(function () {-->
+<!--			setInterval(function () {-->
+<!--				$(".class_name").load(location.href + " .class_name");//注意后面Div的id前面的空格，很重要！（也可以使用类名，或者某一种类名的.id名）-->
+<!--			}, 5000);//设置自动刷新时间：3秒-->
+<!--		})-->
+<!--	</script>-->
+
+<!--	<script language="JavaScript">-->
+<!--		setTimeout(function(){location.reload()},1000); //指定1秒刷新一次-->
+<!--	</script>-->
+<!--	warnStric1-->
+
+	<script th:inline="javascript">
+		var warnStic1 = [[${warnStatistics1}]];
+		console.log(warnStic1);
+		$(function() {
+			var ctx = document.getElementById('chartjs-dashboard-line1').getContext("2d");
+			var gradient = ctx.createLinearGradient(0, 0, 0, 225);
+			gradient.addColorStop(0, 'rgba(215, 227, 244, 1)');
+			gradient.addColorStop(1, 'rgba(215, 227, 244, 0)');
+			// Line chart
+			new Chart(document.getElementById("chartjs-dashboard-line1"), {
+						type: 'line',
+						data: {
+							labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+							datasets: [{
+								label: "告警数:",
+								fill: true,
+								backgroundColor: gradient,
+								borderColor: window.theme.primary,
+								data:warnStic1
+							}]
+						},
+						options: {
+							maintainAspectRatio: false,
+							legend: {
+								display: false
+							},
+							tooltips: {
+								intersect: false
+							},
+							hover: {
+								intersect: true
+							},
+							plugins: {
+								filler: {
+									propagate: false
+								}
+							},
+							scales: {
+								xAxes: [{
+									reverse: true,
+									gridLines: {
+										color: "rgba(0,0,0,0.0)"
+									}
+								}],
+								yAxes: [{
+									ticks: {
+										stepSize: 1000
+									},
+									display: true,
+									borderDash: [3, 3],
+									gridLines: {
+										color: "rgba(0,0,0,0.0)"
+									}
+								}]
+							}
+						}
+					}
+
+
+			);
+		});
+	</script>
+
+
+	<script>
+		$(function() {
+			// Pie chart
+			new Chart(document.getElementById("chartjs-dashboard-pie"), {
+				type: 'pie',
+				data: {
+					labels: ["新疆", "内蒙古", "山东","上海","湖南"],
+					datasets: [{
+						data: [1, 1, 1,1,2],
+						backgroundColor: [
+							window.theme.primary,
+							window.theme.warning,
+							window.theme.danger,
+							window.theme.info,
+							window.theme.secondary
+						],
+						borderWidth: 5
+					}]
+				},
+				options: {
+					responsive: !window.MSInputMethodContext,
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					cutoutPercentage: 75
+				}
+			});
+		});
+	</script>
+	<script th:inline="javascript">
+		var operStatis = [[${operStatis}]];
+		console.log(operStatis);
+		var user = new Array(operStatis.length);
+		var number = new Array(operStatis.length);
+		for(var i = 0;i < operStatis.length;i++){
+			user[i] = operStatis[i]["user"];
+			number[i] = operStatis[i]["number"];
+		}
+		$(function() {
+			// Bar chart
+			new Chart(document.getElementById("chartjs-dashboard-bar"), {
+				type: 'bar',
+				data: {
+					/*labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],*/
+					labels:user,
+					datasets: [{
+						label: "总计",
+						backgroundColor: window.theme.primary,
+						borderColor: window.theme.primary,
+						hoverBackgroundColor: window.theme.primary,
+						hoverBorderColor: window.theme.primary,
+						/*data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],*/
+						data:number,
+						barPercentage: .75,
+						categoryPercentage: .5
+					}]
+				},
+
+
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					scales: {
+						yAxes: [{
+							gridLines: {
+								display: false
+							},
+							stacked: false,
+							ticks: {
+								stepSize: 20
+							}
+						}],
+						xAxes: [{
+							stacked: false,
+							gridLines: {
+								color: "transparent"
+							}
+						}]
+					}
+				}
+			});
+		});
+	</script>
+
+
+
+<!--	第一个zhuxingtu-->
+	<script th:inline="javascript">
+
+		var user0 = ["safe","not safe"];
+		var number0 = [[${number}]];
+
+
+
+		$(function() {
+			// Bar chart
+			new Chart(document.getElementById("chartjs-dashboard-bar0"), {
+				type: 'bar',
+				data: {
+					/*labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],*/
+					labels:user0,
+					datasets: [{
+						label: "总计",
+						backgroundColor: window.theme.primary,
+						borderColor: window.theme.primary,
+						hoverBackgroundColor: window.theme.primary,
+						hoverBorderColor: window.theme.primary,
+						/*data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],*/
+						data:number0,
+						barPercentage: .6,
+						categoryPercentage: .6
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					scales: {
+						yAxes: [{
+							gridLines: {
+								display: false
+							},
+							stacked: true,
+							ticks: {
+								stepSize: 1
+							}
+						}],
+						xAxes: [{
+							stacked: false,
+							gridLines: {
+								color: "transparent"
+							}
+						}]
+					}
+				}
+			});
+		});
+	</script>
+
+
+
+
+	<script th:inline="javascript">
+		var switchs = [[${switchs}]];
+		var switchMarker = new Array(switchs.length);
+		console.log(switchs);
+		$(function() {
+			$("#world_map").vectorMap({
+				map: "world_mill",
+				normalizeFunction: "polynomial",
+				hoverOpacity: .7,
+				hoverColor: false,
+				regionStyle: {
+					initial: {
+						fill: "#e3eaef"
+					}
+				},
+				markerStyle: {
+					initial: {
+						"r": 9,
+						"fill": window.theme.primary,
+						"fill-opacity": .95,
+						"stroke": "#fff",
+						"stroke-width": 7,
+						"stroke-opacity": .4
+					},
+					hover: {
+						"stroke": "#fff",
+						"fill-opacity": 1,
+						"stroke-width": 1.5
+					}
+				},
+				backgroundColor: "transparent",
+				zoomOnScroll: false,
+				markers: [{
+						latLng: [31.230391, 121.473701],
+						name: switchs[0],
+					},
+					{
+						latLng: [26.704060, 110.102493],
+						name: switchs[1],
+					},
+					{
+						latLng: [38.524379, 110.379206],
+						name: switchs[2],
+					},
+					{
+						latLng: [35.689487, 79.691711],
+						name: switchs[3],
+					},
+					{
+						latLng: [26.129110, 113.264381],
+						name: switchs[4],
+					},
+					{
+						latLng: [34.052235, 118.243683],
+						name: switchs[5],
+					},
+				]
+			});
+			setTimeout(function() {
+				$(window).trigger('resize');
+			}, 250)
+		});
+	</script>
+	<script>
+		$(function() {
+			$('#datetimepicker-dashboard').datetimepicker({
+				inline: true,
+				sideBySide: false,
+				format: 'L'
+			});
+		});
+	</script>
+	<script th:inline="javascript" type="text/javascript">
+		var message = [[${message}]];
+		if(message == "reject"){
+			alert("您的管理员权限受限");
+		}
+	</script>
+	<script th:inline="javascript" type="text/javascript">
+		var operation = [[${operation}]];
+		console.log(operation);
+		var table = document.getElementById("table01");
+		var tbody = document.getElementById("tbody01");
+		for(var i = 0;i < operation.length;i++){
+			var tr = document.createElement('tr');
+			tbody.appendChild(tr);
+				for (var k in operation[i]) {
+					var td = document.createElement('td');
+					td.innerHTML = operation[i][k];
+					tr.appendChild(td);
+				}
+		}
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Responsive Web UI Kit &amp; Dashboard Template based on Bootstrap">
+    <meta name="author" content="AdminKit">
+    <meta name="keywords" content="adminkit, bootstrap, web ui kit, dashboard template, admin template">
+
+    <link rel="shortcut icon" href="img/icons/icon-48x48.png"/>
+
+    <title>信息图谱</title>
+
+    <link href="css/app.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="wrapper">
+    <nav id="sidebar" class="sidebar">
+        <div class="sidebar-content js-simplebar">
+            <a class="sidebar-brand" href="index.html">
+                <span class="align-middle">网络安全智能防护系统</span>
+            </a>
+
+            <ul class="sidebar-nav">
+
+
+<!--                <li class="sidebar-header">-->
+<!--                    <a class="sidebar-header" href="index0">-->
+<!--                        <span>下层网络安全智能防护系统</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+                <li class="sidebar-header">
+                    功能列表
+                </li>
+
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="index">
+                        <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">系统主页</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="newPage">
+                        <i class="align-middle" data-feather="user"></i> <span class="align-middle">流量分析</span>
+                    </a>
+                </li>
+
+
+<!--                <li class="sidebar-item">-->
+<!--                    <a class="sidebar-link" href="index0">-->
+<!--                        <i class="align-middle" data-feather="map"></i> <span class="align-middle">可视化</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="changeRoute">
+                        <i class="align-middle" data-feather="user"></i> <span class="align-middle">下发流表</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="/deleteFlow">
+                        <i class="align-middle" data-feather="settings"></i> <span class="align-middle">删除流表</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item active">
+                    <a class="sidebar-link" href="/graph">
+                        <i class="align-middle" data-feather="credit-card"></i> <span
+                            class="align-middle">信息图谱</span>
+                    </a>
+                </li>
+
+
+
+                <li class="sidebar-header">
+                    消息中心
+                </li>
+                <li class="sidebar-item">
+                    <a href="#ui" data-toggle="collapse" class="sidebar-link collapsed">
+                        <i class="align-middle" data-feather="briefcase"></i> <span
+                            class="align-middle">请求消息</span>
+                    </a>
+                    <ul id="ui" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+                        <li class="sidebar-item"><a class="sidebar-link" href="/flow-cache-view">待批申请</a></li>
+                        <li class="sidebar-item"><a class="sidebar-link" href="/isLegal">预警信息</a></li>
+<!--                        <li class="sidebar-item"><a class="sidebar-link" href="ui-cards.html">Cards</a></li>-->
+<!--                        <li class="sidebar-item"><a class="sidebar-link" href="ui-general.html">General</a></li>-->
+<!--                        <li class="sidebar-item"><a class="sidebar-link" href="ui-grid.html">Grid</a></li>-->
+<!--                        <li class="sidebar-item"><a class="sidebar-link" href="ui-modals.html">Modals</a></li>-->
+<!--                        <li class="sidebar-item"><a class="sidebar-link" href="ui-typography.html">Typography</a></li>-->
+                    </ul>
+                </li>
+
+<!--                <li class="sidebar-item">-->
+<!--                    <a class="sidebar-link" href="icons-feather.html">-->
+<!--                        <i class="align-middle" data-feather="coffee"></i> <span class="align-middle">Icons</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+
+<!--                <li class="sidebar-item">-->
+<!--                    <a href="#forms" data-toggle="collapse" class="sidebar-link collapsed">-->
+<!--                        <i class="align-middle" data-feather="check-circle"></i> <span class="align-middle">Forms</span>-->
+<!--                    </a>-->
+<!--                    <ul id="forms" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">-->
+<!--                        <li class="sidebar-item"><a class="sidebar-link" href="forms-layouts.html">Form Layouts</a></li>-->
+<!--                        <li class="sidebar-item"><a class="sidebar-link" href="forms-basic-inputs.html">Basic Inputs</a>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </li>-->
+
+<!--                <li class="sidebar-item">-->
+<!--                    <a class="sidebar-link" href="tables-bootstrap.html">-->
+<!--                        <i class="align-middle" data-feather="list"></i> <span class="align-middle">Tables</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+
+
+
+<!--                <li class="sidebar-item">-->
+<!--                    <a class="sidebar-link" href="fault-recovery.html">-->
+<!--                        <i class="align-middle" data-feather="bar-chart-2"></i> <span class="align-middle">Charts</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+
+<!--                <li class="sidebar-item">-->
+<!--                    <a class="sidebar-link" href="maps-google.html">-->
+<!--                        <i class="align-middle" data-feather="map"></i> <span class="align-middle">Maps</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+            </ul>
+
+<!--            <div class="sidebar-cta">-->
+<!--                <div class="sidebar-cta-content">-->
+<!--                    <strong class="d-inline-block mb-2">Upgrade to Pro</strong>-->
+<!--                    <div class="mb-3 text-sm">-->
+<!--                        Are you looking for more components?-->
+<!--                    </div>-->
+<!--                    <a href="#" target="_blank" class="btn btn-outline-primary btn-block">Upgrade</a>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+    </nav>
+
+    <div class="main">
+        <nav class="navbar navbar-expand navbar-light navbar-bg">
+            <a class="sidebar-toggle d-flex">
+                <i class="hamburger align-self-center"></i>
+            </a>
+
+            <form class="form-inline d-none d-sm-inline-block">
+                <div class="input-group input-group-navbar">
+                    <input type="text" class="form-control" placeholder="Search…" aria-label="Search">
+                    <div class="input-group-append">
+                        <button class="btn" type="button">
+                            <i class="align-middle" data-feather="search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="navbar-collapse collapse">
+                <ul class="navbar-nav navbar-align">
+                    <li class="nav-item dropdown">
+                        <a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-toggle="dropdown">
+                            <i class="align-middle" data-feather="settings"></i>
+                        </a>
+
+                        <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-toggle="dropdown">
+                            <img src="img/avatars/avatar.jpg" class="avatar img-fluid rounded mr-1" alt="Charles Hall"/>
+                            <span th:text="${name}" class="text-dark">Charles Hall</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="insertFlow.html"><i class="align-middle mr-1"
+                                                                               data-feather="user"></i> Profile</a>
+                            <a class="dropdown-item" href="#"><i class="align-middle mr-1" data-feather="pie-chart"></i>
+                                Analytics</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="deleteFlow.html"><i class="align-middle mr-1"
+                                                                               data-feather="settings"></i> Settings &
+                                Privacy</a>
+                            <a class="dropdown-item" href="#"><i class="align-middle mr-1"
+                                                                 data-feather="help-circle"></i> Help Center</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Log out</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="content">
+            <div class="container-fluid p-0">
+
+                <h1 class="h3 mb-3">Invoice</h1>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body m-sm-3 m-md-5" id="main" style="width: 1400px;height: 700px">
+                                <!--此处添加代码-->
+                            </div>
+
+                            <script type="text/javascript"
+                                    src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+                            <script th:inline="javascript" type="text/javascript">
+                                var myChart = echarts.init(document.getElementById('main'));
+
+                                /*自定义*/
+                                var flows = [[${flows}]];
+                                var Switch = new Array(flows["SNodeList"].length);
+                                var Flow = new Array(flows["FNodeList"].length);
+                                var SSRel = new Array(flows["SSRelList"].length);
+                                var SFRel = new Array(flows["SFRelList"].length);
+                                for(var i = 0;i < flows["SFRelList"].length;i++)
+                                {
+                                    SFRel[i] = new Array(2);
+                                }
+                                for(var i = 0;i < flows["SSRelList"].length;i++)
+                                {
+                                    SSRel[i] = new Array(2);
+                                }
+                                for(var i = 0;i < flows["FNodeList"].length;i++)
+                                {
+                                    Flow[i] = new Array(2);
+                                }
+                                for(var i = 0;i < flows["SNodeList"].length;i++)
+                                {
+                                    Switch[i] = flows["SNodeList"][i][0].substr(11,10);
+                                }
+                                for(var i = 0;i < flows["FNodeList"].length;i++)
+                                {
+                                    //Switch[i] = flows["SNodeList"][0][0].substr(11,10);
+                                    Flow[i][0] = flows["FNodeList"][i]["n.flow_id"];
+                                    Flow[i][1] = flows["FNodeList"][i]["n.node_id"];
+                                }
+                                for(var i = 0;i < flows["SSRelList"].length;i++)
+                                {
+                                    //Switch[i] = flows["SNodeList"][0][0].substr(11,10);
+                                    SSRel[i][0] = flows["SSRelList"][i]["n.node_id"];
+                                    SSRel[i][1] = flows["SSRelList"][i]["m.node_id"];
+                                }
+                                for(var i = 0;i < flows["SFRelList"].length;i++)
+                                {
+                                    SFRel[i][0] = flows["SFRelList"][i]["n.flow_id"];
+                                    SFRel[i][1] = flows["SFRelList"][i]["m.node_id"];
+                                }
+
+                                var SSLinks = new Array(Switch.length+Flow.length);
+                                for(var i = 0;i < Switch.length+Flow.length;i++){
+                                    SSLinks[i] = new Array(2);
+                                }
+
+                                for(var i = 0;i < SSRel.length-1;i++)
+                                {
+                                    for(var k = i+1;k < SSRel.length;k++ )
+                                    {
+                                        if((SSRel[i][0] == SSRel[k][0] && SSRel[i][1] == SSRel[k][1]) || (SSRel[i][0] == SSRel[k][1] && SSRel[i][1] == SSRel[k][0]))
+                                        {
+                                            SSRel[k][0] = null;
+                                            SSRel[k][1] = null;
+                                            break;
+                                        }
+                                    }
+
+                                }
+
+                                var data1 = new Array(Switch.length+Flow.length);
+                                for(var i = 0;i < (Switch.length+Flow.length);i++){
+                                    if(i < Switch.length)
+                                    {
+                                        data1[i] = {
+                                            name: Switch[i],
+                                            symbolSize: 70,         // 关系图节点标记的大小，可以设置成诸如 10 这样单一的数字，也可以用数组分开表示宽和高，例如 [20, 10] 表示标记宽为20，高为10。
+                                            category: 0,         // 数据项所在类目的 index。
+                                        };
+                                    }
+                                    else
+                                    {
+                                        data1[i] = {
+                                            name: Flow[i-Switch.length][0],
+                                            symbolSize: 50,         // 关系图节点标记的大小，可以设置成诸如 10 这样单一的数字，也可以用数组分开表示宽和高，例如 [20, 10] 表示标记宽为20，高为10。
+                                            category: 1,         // 数据项所在类目的 index。
+                                        };
+                                    }
+                                }
+
+                                var links1 = new Array();
+                                var counter = 0;
+                                for(var i = 0;i < SSRel.length + SFRel.length;i++)
+                                {
+                                    if(i < SSRel.length){
+                                        if(SSRel[i][0] != null){
+                                            links1[counter] = {                   // 节点间的关系数据
+                                                source: SSRel[i][0],
+                                                target: SSRel[i][1],
+                                                name: "connect",              // 关系对象连接线上的标签内容
+                                            };
+                                            counter = counter + 1;
+                                        }
+                                    }
+                                    else {
+                                        links1[counter] = {                   // 节点间的关系数据
+                                            source: SFRel[i-SSRel.length][0],
+                                            target: SFRel[i-SSRel.length][1],
+                                            name: "belong",              // 关系对象连接线上的标签内容
+                                        };
+                                        counter = counter + 1;
+                                    }
+                                }
+                                /*×××××××××××××××*/
+
+                                var categories = [{name:'交换机'},{name:'流表'}];
+                                /*for (var i = 0; i < 2; i++) {
+                                    categories[i] = {
+                                        name: '类目' + i
+                                    };
+                                }*/
+                                option = {
+                                    // 图的标题
+                                    title: {
+                                        text: 'ECharts 关系图'
+                                    },
+                                    // 提示框的配置
+                                    tooltip: {
+                                        formatter: function (x) {
+                                            return x.data.des;
+                                        }
+                                    },
+                                    // 工具箱
+                                    toolbox: {
+                                        // 显示工具箱
+                                        show: true,
+                                        feature: {
+                                            mark: {
+                                                show: true
+                                            },
+                                            // 还原
+                                            restore: {
+                                                show: true
+                                            },
+                                            // 保存为图片
+                                            saveAsImage: {
+                                                show: true
+                                            }
+                                        }
+                                    },
+                                    legend: [{
+                                        // selectedMode: 'single',
+                                        data: categories.map(function (a) {
+                                            return a.name;
+                                        })
+                                    }],
+                                    series: [{
+                                        type: 'graph', // 类型:关系图
+                                        layout: 'force', //图的布局，类型为力导图
+                                        symbolSize: 40, // 调整节点的大小
+                                        roam: true, // 是否开启鼠标缩放和平移漫游。默认不开启。如果只想要开启缩放或者平移,可以设置成 'scale' 或者 'move'。设置成 true 为都开启
+                                        edgeSymbol: ['circle', 'arrow'],
+                                        edgeSymbolSize: [2, 10],
+                                        edgeLabel: {
+                                            normal: {
+                                                textStyle: {
+                                                    fontSize: 20
+                                                }
+                                            }
+                                        },
+                                        force: {
+                                            repulsion: 2500,
+                                            edgeLength: [10, 50]
+                                        },
+                                        draggable: true,
+                                        lineStyle: {
+                                            normal: {
+                                                width: 2,
+                                                color: '#4b565b',
+                                            }
+                                        },
+                                        edgeLabel: {
+                                            normal: {
+                                                show: true,
+                                                formatter: function (x) {
+                                                    return x.data.name;
+                                                }
+                                            }
+                                        },
+                                        label: {
+                                            normal: {
+                                                show: true,
+                                                textStyle: {}
+                                            }
+                                        },
+
+                                        data:data1,
+                                        links:links1,
+                                        categories: categories,
+                                    }]
+                                };
+                                console.log(option);
+                                myChart.setOption(option);
+                            </script>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+<!--        <footer class="footer">-->
+<!--            <div class="container-fluid">-->
+<!--                <div class="row text-muted">-->
+<!--                    <div class="col-6 text-left">-->
+<!--                        <p class="mb-0">-->
+<!--                            <a href="index.html" class="text-muted"><strong>AdminKit Demo</strong></a> &copy;-->
+<!--                        </p>-->
+<!--                    </div>-->
+<!--                    <div class="col-6 text-right">-->
+<!--                        <ul class="list-inline">-->
+<!--                            <li class="list-inline-item">-->
+<!--                                <a class="text-muted" href="#">Support</a>-->
+<!--                            </li>-->
+<!--                            <li class="list-inline-item">-->
+<!--                                <a class="text-muted" href="#">Help Center</a>-->
+<!--                            </li>-->
+<!--                            <li class="list-inline-item">-->
+<!--                                <a class="text-muted" href="#">Privacy</a>-->
+<!--                            </li>-->
+<!--                            <li class="list-inline-item">-->
+<!--                                <a class="text-muted" href="#">Terms</a>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </footer>-->
+    </div>
+</div>
+
+<script src="js/vendor.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+
+</html>

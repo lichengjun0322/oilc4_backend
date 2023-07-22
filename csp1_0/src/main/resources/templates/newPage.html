@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Responsive Web UI Kit &amp; Dashboard Template based on Bootstrap">
+    <meta name="author" content="AdminKit">
+    <meta name="keywords" content="adminkit, bootstrap, web ui kit, dashboard template, admin template">
+    <link rel="shortcut icon" href="../static/img/icons/icon-48x48.png" />
+    <title>流量分类</title>
+    <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js"></script>
+    <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js"></script>
+    <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js"></script>
+    <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
+    <link href="css/app.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="wrapper">
+    <nav id="sidebar" class="sidebar">
+        <div class="sidebar-content js-simplebar">
+            <a class="sidebar-brand" href="index2.html">
+                <span class="align-middle">网络安全智能防护系统</span>
+            </a>
+
+            <ul class="sidebar-nav">
+
+<!--                <li class="sidebar-header">-->
+<!--                    <a class="sidebar-header" href="index0">-->
+<!--                        <span>下层网络安全智能防护系统</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+
+<!--                <li class="sidebar-header">-->
+<!--                    <a class="sidebar-header" href="newPage">-->
+<!--                        <span>流量分类</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+
+                <li class="sidebar-header">
+                    功能列表
+                </li>
+
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="index">
+                        <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">系统主页</span>
+                    </a>
+                </li>
+                <li class="sidebar-item active">
+                    <a class="sidebar-link" href="newPage">
+                        <i class="align-middle" data-feather="user"></i> <span class="align-middle">流量分析</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="changeRoute">
+                        <i class="align-middle" data-feather="user"></i> <span class="align-middle">下发流表</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="/deleteFlow">
+                        <i class="align-middle" data-feather="settings"></i> <span class="align-middle">删除流表</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="/graph">
+                        <i class="align-middle" data-feather="credit-card"></i> <span class="align-middle">信息图谱</span>
+                    </a>
+                </li>
+
+
+
+                <li class="sidebar-header">
+                    消息中心
+                </li>
+                <li class="sidebar-item">
+                    <a href="#ui" data-toggle="collapse" class="sidebar-link collapsed">
+                        <i class="align-middle" data-feather="briefcase"></i> <span class="align-middle">请求消息</span>
+                    </a>
+                    <ul id="ui" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+                        <li class="sidebar-item"><a class="sidebar-link" href="/flow-cache-view">待批申请</a></li>
+                        <li class="sidebar-item"><a class="sidebar-link" href="/isLegal">预警信息</a></li>
+<!--                        <li class="sidebar-item"><a class="sidebar-link" href="ui-cards.html">Cards</a></li>-->
+<!--                        <li class="sidebar-item"><a class="sidebar-link" href="ui-general.html">General</a></li>-->
+<!--                        <li class="sidebar-item"><a class="sidebar-link" href="ui-grid.html">Grid</a></li>-->
+<!--                        <li class="sidebar-item"><a class="sidebar-link" href="ui-modals.html">Modals</a></li>-->
+<!--                        <li class="sidebar-item"><a class="sidebar-link" href="ui-typography.html">Typography</a></li>-->
+                    </ul>
+                </li>
+
+<!--                <li class="sidebar-item">-->
+<!--                    <a class="sidebar-link" href="icons-feather.html">-->
+<!--                        <i class="align-middle" data-feather="coffee"></i> <span class="align-middle">Icons</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+
+<!--                <li class="sidebar-item">-->
+<!--                    <a href="#forms" data-toggle="collapse" class="sidebar-link collapsed">-->
+<!--                        <i class="align-middle" data-feather="check-circle"></i> <span class="align-middle">Forms</span>-->
+<!--                    </a>-->
+<!--                    <ul id="forms" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">-->
+<!--                        <li class="sidebar-item"><a class="sidebar-link" href="forms-layouts.html">Form Layouts</a></li>-->
+<!--                        <li class="sidebar-item"><a class="sidebar-link" href="forms-basic-inputs.html">Basic Inputs</a></li>-->
+<!--                    </ul>-->
+<!--                </li>-->
+
+<!--                <li class="sidebar-item">-->
+<!--                    <a class="sidebar-link" href="tables-bootstrap.html">-->
+<!--                        <i class="align-middle" data-feather="list"></i> <span class="align-middle">Tables</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+
+
+
+
+
+<!--                <li class="sidebar-item">-->
+<!--                    <a class="sidebar-link" href="maps-google.html">-->
+<!--                        <i class="align-middle" data-feather="map"></i> <span class="align-middle">Maps</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+            </ul>
+
+<!--            <div class="sidebar-cta">-->
+<!--                <div class="sidebar-cta-content">-->
+<!--                    <strong class="d-inline-block mb-2">Upgrade to Pro</strong>-->
+<!--                    <div class="mb-3 text-sm">-->
+<!--                        Are you looking for more components?-->
+<!--                    </div>-->
+<!--                    <a href="#" target="_blank" class="btn btn-outline-primary btn-block">Upgrade</a>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+    </nav>
+
+    <div class="main">
+        <nav class="navbar navbar-expand navbar-light navbar-bg">
+            <a class="sidebar-toggle d-flex">
+                <i class="hamburger align-self-center"></i>
+            </a>
+
+            <form class="form-inline d-none d-sm-inline-block">
+                <div class="input-group input-group-navbar">
+                    <input type="text" class="form-control" placeholder="Search…" aria-label="Search">
+                    <div class="input-group-append">
+                        <button class="btn" type="button">
+                            <i class="align-middle" data-feather="search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="navbar-collapse collapse">
+                <ul class="navbar-nav navbar-align">
+                    <li class="nav-item dropdown">
+                        <a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-toggle="dropdown">
+                            <div class="position-relative">
+                                <i class="align-middle" data-feather="bell"></i>
+                                <span class="indicator">4</span>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0" aria-labelledby="alertsDropdown">
+                            <div class="dropdown-menu-header">
+                                4 New Notifications
+                            </div>
+                            <div class="list-group">
+                                <a href="#" class="list-group-item">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-2">
+                                            <i class="text-danger" data-feather="alert-circle"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="text-dark">Update completed</div>
+                                            <div class="text-muted small mt-1">Restart server 12 to complete the update.</div>
+                                            <div class="text-muted small mt-1">30m ago</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-2">
+                                            <i class="text-warning" data-feather="bell"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="text-dark">Lorem ipsum</div>
+                                            <div class="text-muted small mt-1">Aliquam ex eros, imperdiet vulputate hendrerit et.</div>
+                                            <div class="text-muted small mt-1">2h ago</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-2">
+                                            <i class="text-primary" data-feather="home"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="text-dark">Login from 192.186.1.8</div>
+                                            <div class="text-muted small mt-1">5h ago</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-2">
+                                            <i class="text-success" data-feather="user-plus"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="text-dark">New connection</div>
+                                            <div class="text-muted small mt-1">Christina accepted your request.</div>
+                                            <div class="text-muted small mt-1">14h ago</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dropdown-menu-footer">
+                                <a href="#" class="text-muted">Show all notifications</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-icon dropdown-toggle" href="#" id="messagesDropdown" data-toggle="dropdown">
+                            <div class="position-relative">
+                                <i class="align-middle" data-feather="message-square"></i>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0" aria-labelledby="messagesDropdown">
+                            <div class="dropdown-menu-header">
+                                <div class="position-relative">
+                                    4 New Messages
+                                </div>
+                            </div>
+                            <div class="list-group">
+                                <a href="#" class="list-group-item">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-2">
+                                            <img src="../static/img/avatars/avatar-5.jpg" class="avatar img-fluid rounded-circle" alt="Vanessa Tucker">
+                                        </div>
+                                        <div class="col-10 pl-2">
+                                            <div class="text-dark">Vanessa Tucker</div>
+                                            <div class="text-muted small mt-1">Nam pretium turpis et arcu. Duis arcu tortor.</div>
+                                            <div class="text-muted small mt-1">15m ago</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-2">
+                                            <img src="../static/img/avatars/avatar-2.jpg" class="avatar img-fluid rounded-circle" alt="William Harris">
+                                        </div>
+                                        <div class="col-10 pl-2">
+                                            <div class="text-dark">William Harris</div>
+                                            <div class="text-muted small mt-1">Curabitur ligula sapien euismod vitae.</div>
+                                            <div class="text-muted small mt-1">2h ago</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-2">
+                                            <img src="../static/img/avatars/avatar-4.jpg" class="avatar img-fluid rounded-circle" alt="Christina Mason">
+                                        </div>
+                                        <div class="col-10 pl-2">
+                                            <div class="text-dark">Christina Mason</div>
+                                            <div class="text-muted small mt-1">Pellentesque auctor neque nec urna.</div>
+                                            <div class="text-muted small mt-1">4h ago</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-2">
+                                            <img src="../static/img/avatars/avatar-3.jpg" class="avatar img-fluid rounded-circle" alt="Sharon Lessman">
+                                        </div>
+                                        <div class="col-10 pl-2">
+                                            <div class="text-dark">Sharon Lessman</div>
+                                            <div class="text-muted small mt-1">Aenean tellus metus, bibendum sed, posuere ac, mattis non.</div>
+                                            <div class="text-muted small mt-1">5h ago</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dropdown-menu-footer">
+                                <a href="#" class="text-muted">Show all messages</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-toggle="dropdown">
+                            <i class="align-middle" data-feather="settings"></i>
+                        </a>
+
+                        <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-toggle="dropdown">
+                            <img src="/img/avatars/avatar.jpg" class="avatar img-fluid rounded mr-1" alt="Charles Hall" /> <span th:text="${name}" class="text-dark">Charles Hall</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="insertFlow.html"><i class="align-middle mr-1" data-feather="user"></i> Profile</a>
+                            <a class="dropdown-item" href="#"><i class="align-middle mr-1" data-feather="pie-chart"></i> Analytics</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="deleteFlow.html"><i class="align-middle mr-1" data-feather="settings"></i> Settings & Privacy</a>
+                            <a class="dropdown-item" href="#"><i class="align-middle mr-1" data-feather="help-circle"></i> Help Center</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Log out</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="content">
+            <div class="container-fluid p-0">
+                <h1 class="h3 mb-3">网络流量分析</h1>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="card flex-fill w-100">
+                            <div class="card-header">
+                                <h5 class="card-title">业务/恶意流量占比</h5>
+                                <!--<h6 class="card-subtitle text-muted">A line chart is a way of plotting data points on a line.</h6>-->
+                            </div>
+                            <div class="card-body">
+                                <div id="bing" style="height: 300px"></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title">各类主要流量进入量</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart">
+                                    <div id="zhuzhuang" style="height: 300px"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title">各类业务流量进入量</h5>
+
+                            </div>
+                            <div class="card-body">
+
+                                <div id="zhexian1" style="height: 300px"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title">各类恶意流量进入量</h5>
+                                <h6 class="card-subtitle text-muted"></h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart chart-sm">
+                                    <div id="zhexian2" style="height: 300px"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+<!--        <footer class="footer">-->
+<!--            <div class="container-fluid">-->
+<!--                <div class="row text-muted">-->
+<!--                    <div class="col-6 text-left">-->
+<!--                        <p class="mb-0">-->
+<!--                            <a href="index2.html" class="text-muted"><strong>AdminKit Demo</strong></a> &copy;-->
+<!--                        </p>-->
+<!--                    </div>-->
+<!--                    <div class="col-6 text-right">-->
+<!--                        <ul class="list-inline">-->
+<!--                            <li class="list-inline-item">-->
+<!--                                <a class="text-muted" href="#">Support</a>-->
+<!--                            </li>-->
+<!--                            <li class="list-inline-item">-->
+<!--                                <a class="text-muted" href="#">Help Center</a>-->
+<!--                            </li>-->
+<!--                            <li class="list-inline-item">-->
+<!--                                <a class="text-muted" href="#">Privacy</a>-->
+<!--                            </li>-->
+<!--                            <li class="list-inline-item">-->
+<!--                                <a class="text-muted" href="#">Terms</a>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </footer>-->
+    </div>
+</div>
+
+<!--<script src="js/shuaxin.js"></script>-->
+<script src="js/vendor.js"></script>
+<script src="js/app.js"></script>
+
+<script type="text/javascript">
+    var dom = document.getElementById("bing");
+    var myChart1 = echarts.init(dom);
+    var app = {};
+    let safe = [[${ safe }]];
+    let unsafe = [[${ unsafe }]];
+    app.title = '环形图';
+    var option1 = {
+        tooltip: {
+            trigger: 'item',
+            formatter: "{a} <br/>{b}: {c} ({d}%)"
+        },
+        color:['#bbe2e8','#FFD83D'],
+        legend: {
+            orient: 'horizontal',
+            x: 'left',
+            data: ['业务流量',  '恶意流量']
+        },
+        series: [{
+            name: '访问来源',
+            type: 'pie',
+            radius: ['30%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '20',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data: [{
+                value: safe,
+                name: '业务流量'
+                },
+                {
+                    value: unsafe,
+                    name: '恶意流量'
+                }
+            ]
+        }]
+    };
+
+    if(option1 && typeof option1 === "object") {
+        myChart1.setOption(option1, true);
+    }
+    window.addEventListener('resize', myChart1.resize);
+
+</script>
+<script th:inline="javascript">
+    var dom = document.getElementById('zhexian1');
+    var myChart = echarts.init(dom, null, {
+        renderer: 'canvas',
+        useDirtyRect: false
+    });
+    var num_Bittorrent= [[${num_Bittorrent}]];
+    var num_facetime= [[${num_facetime}]];
+    var num_ftp= [[${num_ftp}]];
+    var num_gmail= [[${num_gmail}]];
+    var num_mysql= [[${num_mysql}]];
+    var num_outlook= [[${num_outlook}]];
+    var num_skype= [[${num_skype}]];
+    var num_smb=[[${num_smb}]];
+    var num_weibo=[[${num_weibo}]];
+    var num_worldof=[[${num_worldof}]];
+
+    console.log('hello')
+
+
+    var app = {};
+
+    var option;
+
+    option = {
+        color: ['#80FFA5', '#00DDFF', '#37A2FF', '#FF0087', '#FFBF00','#80F0FFFF','#00FFB7FF','#37B9FFFF','#FF0048FF','#FFE600FF'],
+        title: {
+            // text: 'Stacked Area Chart'
+        },
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'cross',
+                label: {
+                    backgroundColor: '#6a7985'
+                }
+            }
+        },
+        legend: {
+            data: ['BitTorrent', 'Facetime', 'FTP','Gmail','MySQL', 'Outlook', 'Skype','SMB', 'Weibo', 'WorldOfWarcraft']
+        },
+        toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: [
+            {
+                type: 'category',
+                boundaryGap: false,
+                data:  []
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value'
+            }
+        ],
+        series: [
+            {
+                name: 'BitTorrent',
+                type: 'line',
+                stack: 'Total',
+                areaStyle: {},
+                emphasis: {
+                    focus: 'series'
+                },
+
+                data: num_Bittorrent,
+                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                    {
+                        offset: 0,
+                        color: 'rgb(128, 255, 165)'
+                    },
+                    {
+                        offset: 1,
+                        color: 'rgb(1, 191, 236)'
+                    }
+                ])
+            },
+            {
+                name: 'Facetime',
+                type: 'line',
+                stack: 'Total',
+                areaStyle: {},
+                emphasis: {
+                    focus: 'series'
+                },
+                data: num_facetime,
+                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                    {
+                        offset: 0,
+                        color: 'rgb(0, 221, 255)'
+                    },
+                    {
+                        offset: 1,
+                        color: 'rgb(77, 119, 255)'
+                    }
+                ])
+            },
+            {
+                name: 'FTP',
+                type: 'line',
+                stack: 'Total',
+                areaStyle: {},
+                emphasis: {
+                    focus: 'series'
+                },
+                data: num_ftp,
+                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                    {
+                        offset: 0,
+                        color: 'rgb(55, 162, 255)'
+                    },
+                    {
+                        offset: 1,
+                        color: 'rgb(116, 21, 219)'
+                    }
+                ])
+            },
+            {
+                name: 'Gmail',
+                type: 'line',
+                stack: 'Total',
+                areaStyle: {},
+                emphasis: {
+                    focus: 'series'
+                },
+                data: num_gmail,
+                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                    {
+                        offset: 0,
+                        color: 'rgb(255, 0, 135)'
+                    },
+                    {
+                        offset: 1,
+                        color: 'rgb(135, 0, 157)'
+                    }
+                ])
+            },
+            {
+                name: 'MySQL',
+                type: 'line',
+                stack: 'Total',
+                label: {
+                    show: true,
+                    position: 'top'
+                },
+                areaStyle: {},
+                emphasis: {
+                    focus: 'series'
+                },
+                data: num_mysql,
+                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                    {
+                        offset: 0,
+                        color: 'rgb(255, 191, 0)'
+                    },
+                    {
+                        offset: 1,
+                        color: 'rgb(224, 62, 76)'
+                    }
+                ])
+            },
+
+            {
+                name: 'Outlook',
+                type: 'line',
+                stack: 'Total',
+                areaStyle: {},
+                emphasis: {
+                    focus: 'series'
+                },
+                data: num_outlook,
+                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                    {
+                        offset: 0,
+                        color: 'rgb(128,240,255)'
+                    },
+                    {
+                        offset: 1,
+                        color: 'rgb(17,1,236)'
+                    }
+                ])
+
+            },
+            {
+                name: 'Skype',
+                type: 'line',
+                stack: 'Total',
+                areaStyle: {},
+                emphasis: {
+                    focus: 'series'
+                },
+                data: num_skype,
+                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                    {
+                        offset: 0,
+                        color: 'rgb(0,255,183)'
+                    },
+                    {
+                        offset: 1,
+                        color: 'rgb(145,77,255)'
+                    }
+                ])
+            },
+            {
+                name: 'SMB',
+                type: 'line',
+                stack: 'Total',
+                areaStyle: {},
+                emphasis: {
+                    focus: 'series'
+                },
+                data: num_smb,
+                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                    {
+                        offset: 0,
+                        color: 'rgb(55,185,255)'
+                    },
+                    {
+                        offset: 1,
+                        color: 'rgb(176,21,219)'
+                    }
+                ])
+            },
+            {
+                name: 'Weibo',
+                type: 'line',
+                stack: 'Total',
+                areaStyle: {},
+                emphasis: {
+                    focus: 'series'
+                },
+                data: num_weibo,
+                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                    {
+                        offset: 0,
+                        color: 'rgb(255,0,72)'
+                    },
+                    {
+                        offset: 1,
+                        color: 'rgb(73,0,157)'
+                    }
+                ])
+            },
+            {
+                name: 'WorldOfWarcraft',
+                type: 'line',
+                stack: 'Total',
+                label: {
+                    show: true,
+                    position: 'top'
+                },
+                areaStyle: {},
+                emphasis: {
+                    focus: 'series'
+                },
+                data: num_worldof,
+                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                    {
+                        offset: 0,
+                        color: 'rgb(255,230,0)'
+                    },
+                    {
+                        offset: 1,
+                        color: 'rgb(224,62,127)'
+                    }
+                ])
+            }
+
+
+        ]
+    };
+
+    if (option && typeof option === 'object') {
+        myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+</script>
+
+
+
+
+
+<script th:inline="javascript">
+    var dom = document.getElementById('zhexian2');
+    var myChart = echarts.init(dom, null, {
+        renderer: 'canvas',
+        useDirtyRect: false
+    });
+    var app = {};
+    var num_cridex=[[${num_cridex}]];
+    var num_geodo=[[${num_geodo}]];
+    var num_htbot=[[${num_htbot}]];
+    var num_miure=[[${num_miure}]];
+    var num_neris=[[${num_neris}]];
+    var num_ay=[[${num_ay}]];
+    var num_shifu=[[${num_shifu}]];
+    var num_virut=[[${num_virut}]];
+    var num_tinba=[[${num_tinba}]];
+    var num_zeus=[[${num_zeus}]];
+    var option;
+
+    option = {
+        color: ['#80FFA5', '#00DDFF', '#37A2FF', '#FF0087', '#FFBF00','#80F0FFFF','#00FFB7FF','#37B9FFFF','#FF0048FF','#FFE600FF'],
+        title: {
+            // text: 'Gradient Stacked Area Chart'
+        },
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'cross',
+                label: {
+                    backgroundColor: '#6a7985'
+                }
+            }
+        },
+        legend: {
+            data: ['Cridex', 'Geodo', 'Htbot', 'Miuref', 'Neris','Nsis-ay','Shifu','Tinba','Virut','Zeus']
+        },
+        toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: [
+            {
+                type: 'category',
+                boundaryGap: false,
+                data: []
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value'
+
+            }
+        ],
+        series: [
+            {
+                name: 'Cridex',
+                type: 'line',
+                stack: 'Total',
+                smooth: true,
+                lineStyle: {
+                    width: 0
+                },
+                showSymbol: false,
+                areaStyle: {
+                    opacity: 0.8,
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                        {
+                            offset: 0,
+                            color: 'rgb(128, 255, 165)'
+                        },
+                        {
+                            offset: 1,
+                            color: 'rgb(1, 191, 236)'
+                        }
+                    ])
+                },
+                emphasis: {
+                    focus: 'series'
+                },
+                data: num_cridex
+            },
+            {
+                name: 'Geodo',
+                type: 'line',
+                stack: 'Total',
+                smooth: true,
+                lineStyle: {
+                    width: 0
+                },
+                showSymbol: false,
+                areaStyle: {
+                    opacity: 0.8,
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                        {
+                            offset: 0,
+                            color: 'rgb(0, 221, 255)'
+                        },
+                        {
+                            offset: 1,
+                            color: 'rgb(77, 119, 255)'
+                        }
+                    ])
+                },
+                emphasis: {
+                    focus: 'series'
+                },
+                data: num_geodo
+            },
+            {
+                name: 'Htbot',
+                type: 'line',
+                stack: 'Total',
+                smooth: true,
+                lineStyle: {
+                    width: 0
+                },
+                showSymbol: false,
+                areaStyle: {
+                    opacity: 0.8,
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                        {
+                            offset: 0,
+                            color: 'rgb(55, 162, 255)'
+                        },
+                        {
+                            offset: 1,
+                            color: 'rgb(116, 21, 219)'
+                        }
+                    ])
+                },
+                emphasis: {
+                    focus: 'series'
+                },
+                data: num_htbot
+            },
+            {
+                name: 'Miuref',
+                type: 'line',
+                stack: 'Total',
+                smooth: true,
+                lineStyle: {
+                    width: 0
+                },
+                showSymbol: false,
+                areaStyle: {
+                    opacity: 0.8,
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                        {
+                            offset: 0,
+                            color: 'rgb(255, 0, 135)'
+                        },
+                        {
+                            offset: 1,
+                            color: 'rgb(135, 0, 157)'
+                        }
+                    ])
+                },
+                emphasis: {
+                    focus: 'series'
+                },
+                data: num_miure
+            },
+            {
+                name: 'Neris',
+                type: 'line',
+                stack: 'Total',
+                smooth: true,
+                lineStyle: {
+                    width: 0
+                },
+                showSymbol: false,
+                label: {
+                    show: true,
+                    position: 'top'
+                },
+                areaStyle: {
+                    opacity: 0.8,
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                        {
+                            offset: 0,
+                            color: 'rgb(255, 191, 0)'
+                        },
+                        {
+                            offset: 1,
+                            color: 'rgb(224, 62, 76)'
+                        }
+                    ])
+                },
+                emphasis: {
+                    focus: 'series'
+                },
+                data: num_neris
+            },
+
+
+            {
+                name: 'Nsis-ay',
+                type: 'line',
+                stack: 'Total',
+                smooth: true,
+                lineStyle: {
+                    width: 0
+                },
+                showSymbol: false,
+                areaStyle: {
+                    opacity: 0.8,
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                        {
+                            offset: 0,
+                            color: 'rgb(128,240,255)'
+                        },
+                        {
+                            offset: 1,
+                            color: 'rgb(17,1,236)'
+                        }
+                    ])
+                },
+                emphasis: {
+                    focus: 'series'
+                },
+                data: num_ay
+            },
+            {
+                name: 'Shifu',
+                type: 'line',
+                stack: 'Total',
+                smooth: true,
+                lineStyle: {
+                    width: 0
+                },
+                showSymbol: false,
+                areaStyle: {
+                    opacity: 0.8,
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                        {
+                            offset: 0,
+                            color: 'rgb(0,255,183)'
+                        },
+                        {
+                            offset: 1,
+                            color: 'rgb(145,77,255)'
+                        }
+                    ])
+                },
+                emphasis: {
+                    focus: 'series'
+                },
+                data: num_shifu
+            },
+            {
+                name: 'Tinba',
+                type: 'line',
+                stack: 'Total',
+                smooth: true,
+                lineStyle: {
+                    width: 0
+                },
+                showSymbol: false,
+                areaStyle: {
+                    opacity: 0.8,
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                        {
+                            offset: 0,
+                            color: 'rgb(55,185,255)'
+                        },
+                        {
+                            offset: 1,
+                            color: 'rgb(176,21,219)'
+                        }
+                    ])
+                },
+                emphasis: {
+                    focus: 'series'
+                },
+                data: num_tinba
+            },
+            {
+                name: 'Virut',
+                type: 'line',
+                stack: 'Total',
+                smooth: true,
+                lineStyle: {
+                    width: 0
+                },
+                showSymbol: false,
+                areaStyle: {
+                    opacity: 0.8,
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                        {
+                            offset: 0,
+                            color: 'rgb(255,0,72)'
+                        },
+                        {
+                            offset: 1,
+                            color: 'rgb(73,0,157)'
+                        }
+                    ])
+                },
+                emphasis: {
+                    focus: 'series'
+                },
+                data: num_virut
+
+            },
+            {
+                name: 'Zeus',
+                type: 'line',
+                stack: 'Total',
+                smooth: true,
+                lineStyle: {
+                    width: 0
+                },
+                showSymbol: false,
+                label: {
+                    show: true,
+                    position: 'top'
+                },
+                areaStyle: {
+                    opacity: 0.8,
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                        {
+                            offset: 0,
+                            color: 'rgb(255,230,0)'
+                        },
+                        {
+                            offset: 1,
+                            color: 'rgb(224,62,127)'
+                        }
+                    ])
+                },
+                emphasis: {
+                    focus: 'series'
+                },
+                data: num_zeus
+            }
+
+
+        ]
+    };
+
+    if (option && typeof option === 'object') {
+        myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+</script>
+<script type="text/javascript">
+    var dom = document.getElementById('zhuzhuang');
+    let sum_facetime = [[${sum_facetime}]];
+    let sum_Bittorrent = [[${sum_Bittorrent}]];
+    let sum_gmail=[[${sum_gmail}]];
+    let sum_mysql=[[${sum_mysql}]];
+    let sum_outlook = [[${sum_outlook}]];
+    let sum_skype = [[${sum_skype}]];
+    let sum_smb=[[${sum_smb}]];
+    let sum_weibo=[[${sum_weibo}]];
+    let sum_worldof=[[${sum_worldof}]];
+    let sum_ftp = [[${sum_ftp}]];
+    let sum_zeus = [[${sum_zeus}]];
+    let sum_tinba = [[${sum_tinba}]];
+    let sum_virut = [[${sum_virut}]];
+    let sum_shifu=[[${sum_shifu}]];
+    let sum_ay=[[${sum_ay}]];
+    let sum_neris = [[${sum_neris}]];
+    let sum_miure = [[${sum_miure}]];
+    let sum_htbot=[[${sum_htbot}]];
+    let sum_geodo=[[${sum_geodo}]];
+    let sum_cridex=[[${sum_cridex}]];
+
+
+    var myChart = echarts.init(dom, null, {
+        renderer: 'canvas',
+        useDirtyRect: false
+    });
+    var app = {};
+
+    var option;
+
+    option = {
+        title: {
+            text: '各类主要流量总量',
+            left: 'center'
+        },
+
+        dataset: {
+            source: [
+                ['score','amount', 'product'],
+                ['0',sum_Bittorrent, 'BitTorrent'],
+                ['5',sum_facetime, 'Facetime'],
+                ['10',sum_ftp, 'FTP'],
+                ['15', sum_gmail, 'Gmail'],
+                ['20',sum_mysql, 'MySQL'],
+
+                ['75',sum_cridex, 'Cridex'],
+                ['80',sum_facetime, 'Geodo'],
+                ['85',sum_htbot, 'Htbot'],
+                ['90', sum_miure, 'Miuref'],
+                ['95',sum_neris, 'Neris'],
+
+            ]
+        },
+        grid: { containLabel: true },
+        xAxis: { name: 'amount' },
+        yAxis: { type: 'category' },
+        visualMap: {
+            orient: 'horizontal',
+            left: 'center',
+            min: 0,
+            max: 100,
+            text: ['恶意流量', '业务流量'],
+            // Map the score column to color
+            dimension: 0,
+            inRange: {
+                color: ['#65B581', '#FFCE34', '#FD665F']
+            }
+        },
+        series: [
+            {
+                type: 'bar',
+                encode: {
+                    // Map the "amount" column to X axis.
+                    x: 'amount',
+                    // Map the "product" column to Y axis
+                    y: 'product'
+                }
+            }
+        ]
+    };
+
+    if (option && typeof option === 'object') {
+        myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+</script>
+
+</body>
+
+</html>

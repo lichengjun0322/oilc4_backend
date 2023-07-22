@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="upc.csp1_0.dao.UserMapper">
+
+    <select id="getInfo" parameterType="String" resultType="upc.csp1_0.model.UserBean">
+        SELECT * FROM user WHERE name = #{name} AND password = #{password}
+    </select>
+
+    <insert id="addUser" >
+        INSERT INTO user (id,name,password) VALUES (#{id},#{name},#{password});
+    </insert>
+
+    <insert id="addUserInfo" >
+        INSERT INTO userInfo (secretKey,name,grade,credit) VALUES (#{id},#{name},1,1);
+    </insert>
+
+    <insert id="delLoginer" >
+        DELETE FROM loginer;
+    </insert>
+
+    <insert id="addLoginer" >
+        INSERT INTO loginer (name) VALUES (#{name});
+    </insert>
+
+    <select id="getLoginer" parameterType="String" resultType="String">
+        SELECT * FROM loginer;
+    </select>
+
+    <select id="getUserGrade" parameterType="String" resultType="int">
+        SELECT grade FROM userInfo WHERE name = #{name}
+    </select>
+</mapper>

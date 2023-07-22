@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Responsive Web UI Kit &amp; Dashboard Template based on Bootstrap">
+    <meta name="author" content="AdminKit">
+    <meta name="keywords" content="adminkit, bootstrap, web ui kit, dashboard template, admin template">
+
+    <link rel="shortcut icon" href="../static/img/icons/icon-48x48.png" />
+
+    <title>流量分类</title>
+    <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js"></script>
+    <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js"></script>
+    <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js"></script>
+    <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js"></script>
+    <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
+    <script src="/js/jquery-1.3.2.min.js" type="text/javascript"></script>
+    <link href="css/app.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="wrapper">
+    <nav id="sidebar" class="sidebar">
+        <div class="sidebar-content js-simplebar">
+            <a class="sidebar-brand" href="index2.html">
+                <span class="align-middle">网络安全智能防护系统</span>
+            </a>
+
+            <ul class="sidebar-nav">
+
+<!--                <li class="sidebar-header">-->
+<!--                    <a class="sidebar-header" href="index0">-->
+<!--                        <span>下层网络安全智能防护系统</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+
+                <li class="sidebar-header">
+                    <a class="sidebar-header" href="newPage">
+                        <span>流量分类</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-header">
+                    功能列表
+                </li>
+
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="topology">
+                        <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">系统主页</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="changeRoute">
+                        <i class="align-middle" data-feather="user"></i> <span class="align-middle">下发流表</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="/deleteFlow">
+                        <i class="align-middle" data-feather="settings"></i> <span class="align-middle">删除流表</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="/graph">
+                        <i class="align-middle" data-feather="credit-card"></i> <span class="align-middle">信息图谱</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="network-topology">
+                        <i class="align-middle" data-feather="book"></i> <span class="align-middle">网络拓扑</span>
+                    </a>
+                </li>
+
+
+                <li class="sidebar-header">
+                    消息中心
+                </li>
+                <li class="sidebar-item">
+                    <a href="#ui" data-toggle="collapse" class="sidebar-link collapsed">
+                        <i class="align-middle" data-feather="briefcase"></i> <span class="align-middle">请求消息</span>
+                    </a>
+                    <ul id="ui" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+                        <li class="sidebar-item"><a class="sidebar-link" href="/flow-cache-view">待批申请</a></li>
+                        <li class="sidebar-item"><a class="sidebar-link" href="/isLegal">预警信息</a></li>
+<!--                        <li class="sidebar-item"><a class="sidebar-link" href="ui-cards.html">Cards</a></li>-->
+<!--                        <li class="sidebar-item"><a class="sidebar-link" href="ui-general.html">General</a></li>-->
+<!--                        <li class="sidebar-item"><a class="sidebar-link" href="ui-grid.html">Grid</a></li>-->
+<!--                        <li class="sidebar-item"><a class="sidebar-link" href="ui-modals.html">Modals</a></li>-->
+<!--                        <li class="sidebar-item"><a class="sidebar-link" href="ui-typography.html">Typography</a></li>-->
+                    </ul>
+                </li>
+
+<!--                <li class="sidebar-item">-->
+<!--                    <a class="sidebar-link" href="icons-feather.html">-->
+<!--                        <i class="align-middle" data-feather="coffee"></i> <span class="align-middle">Icons</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+
+<!--                <li class="sidebar-item">-->
+<!--                    <a href="#forms" data-toggle="collapse" class="sidebar-link collapsed">-->
+<!--                        <i class="align-middle" data-feather="check-circle"></i> <span class="align-middle">Forms</span>-->
+<!--                    </a>-->
+<!--                    <ul id="forms" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">-->
+<!--                        <li class="sidebar-item"><a class="sidebar-link" href="forms-layouts.html">Form Layouts</a></li>-->
+<!--                        <li class="sidebar-item"><a class="sidebar-link" href="forms-basic-inputs.html">Basic Inputs</a></li>-->
+<!--                    </ul>-->
+<!--                </li>-->
+
+<!--                <li class="sidebar-item">-->
+<!--                    <a class="sidebar-link" href="tables-bootstrap.html">-->
+<!--                        <i class="align-middle" data-feather="list"></i> <span class="align-middle">Tables</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+
+                <li class="sidebar-header">
+                    自动化运维
+                </li>
+
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="fault-recovery">
+                        <i class="align-middle" data-feather="bar-chart-2"></i> <span class="align-middle">故障恢复</span>
+                    </a>
+                </li>
+            </ul>
+
+<!--            <div class="sidebar-cta">-->
+<!--                <div class="sidebar-cta-content">-->
+<!--                    <strong class="d-inline-block mb-2">Upgrade to Pro</strong>-->
+<!--                    <div class="mb-3 text-sm">-->
+<!--                        Are you looking for more components?-->
+<!--                    </div>-->
+<!--                    <a href="#" target="_blank" class="btn btn-outline-primary btn-block">Upgrade</a>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+    </nav>
+
+    <div class="main">
+        <nav class="navbar navbar-expand navbar-light navbar-bg">
+            <a class="sidebar-toggle d-flex">
+                <i class="hamburger align-self-center"></i>
+            </a>
+
+            <form class="form-inline d-none d-sm-inline-block">
+                <div class="input-group input-group-navbar">
+                    <input type="text" class="form-control" placeholder="Search…" aria-label="Search">
+                    <div class="input-group-append">
+                        <button class="btn" type="button">
+                            <i class="align-middle" data-feather="search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="navbar-collapse collapse">
+                <ul class="navbar-nav navbar-align">
+                    <li class="nav-item dropdown">
+                        <a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-toggle="dropdown">
+                            <div class="position-relative">
+                                <i class="align-middle" data-feather="bell"></i>
+                                <span class="indicator">4</span>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0" aria-labelledby="alertsDropdown">
+                            <div class="dropdown-menu-header">
+                                4 New Notifications
+                            </div>
+                            <div class="list-group">
+                                <a href="#" class="list-group-item">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-2">
+                                            <i class="text-danger" data-feather="alert-circle"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="text-dark">Update completed</div>
+                                            <div class="text-muted small mt-1">Restart server 12 to complete the update.</div>
+                                            <div class="text-muted small mt-1">30m ago</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-2">
+                                            <i class="text-warning" data-feather="bell"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="text-dark">Lorem ipsum</div>
+                                            <div class="text-muted small mt-1">Aliquam ex eros, imperdiet vulputate hendrerit et.</div>
+                                            <div class="text-muted small mt-1">2h ago</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-2">
+                                            <i class="text-primary" data-feather="home"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="text-dark">Login from 192.186.1.8</div>
+                                            <div class="text-muted small mt-1">5h ago</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-2">
+                                            <i class="text-success" data-feather="user-plus"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="text-dark">New connection</div>
+                                            <div class="text-muted small mt-1">Christina accepted your request.</div>
+                                            <div class="text-muted small mt-1">14h ago</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dropdown-menu-footer">
+                                <a href="#" class="text-muted">Show all notifications</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-icon dropdown-toggle" href="#" id="messagesDropdown" data-toggle="dropdown">
+                            <div class="position-relative">
+                                <i class="align-middle" data-feather="message-square"></i>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0" aria-labelledby="messagesDropdown">
+                            <div class="dropdown-menu-header">
+                                <div class="position-relative">
+                                    4 New Messages
+                                </div>
+                            </div>
+                            <div class="list-group">
+                                <a href="#" class="list-group-item">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-2">
+                                            <img src="../static/img/avatars/avatar-5.jpg" class="avatar img-fluid rounded-circle" alt="Vanessa Tucker">
+                                        </div>
+                                        <div class="col-10 pl-2">
+                                            <div class="text-dark">Vanessa Tucker</div>
+                                            <div class="text-muted small mt-1">Nam pretium turpis et arcu. Duis arcu tortor.</div>
+                                            <div class="text-muted small mt-1">15m ago</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-2">
+                                            <img src="../static/img/avatars/avatar-2.jpg" class="avatar img-fluid rounded-circle" alt="William Harris">
+                                        </div>
+                                        <div class="col-10 pl-2">
+                                            <div class="text-dark">William Harris</div>
+                                            <div class="text-muted small mt-1">Curabitur ligula sapien euismod vitae.</div>
+                                            <div class="text-muted small mt-1">2h ago</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-2">
+                                            <img src="../static/img/avatars/avatar-4.jpg" class="avatar img-fluid rounded-circle" alt="Christina Mason">
+                                        </div>
+                                        <div class="col-10 pl-2">
+                                            <div class="text-dark">Christina Mason</div>
+                                            <div class="text-muted small mt-1">Pellentesque auctor neque nec urna.</div>
+                                            <div class="text-muted small mt-1">4h ago</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-2">
+                                            <img src="../static/img/avatars/avatar-3.jpg" class="avatar img-fluid rounded-circle" alt="Sharon Lessman">
+                                        </div>
+                                        <div class="col-10 pl-2">
+                                            <div class="text-dark">Sharon Lessman</div>
+                                            <div class="text-muted small mt-1">Aenean tellus metus, bibendum sed, posuere ac, mattis non.</div>
+                                            <div class="text-muted small mt-1">5h ago</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dropdown-menu-footer">
+                                <a href="#" class="text-muted">Show all messages</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-toggle="dropdown">
+                            <i class="align-middle" data-feather="settings"></i>
+                        </a>
+
+                        <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-toggle="dropdown">
+                            <img src="../static/img/avatars/avatar.jpg" class="avatar img-fluid rounded mr-1" alt="Charles Hall" /> <span th:text="${name}" class="text-dark">Charles Hall</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="insertFlow.html"><i class="align-middle mr-1" data-feather="user"></i> Profile</a>
+                            <a class="dropdown-item" href="#"><i class="align-middle mr-1" data-feather="pie-chart"></i> Analytics</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="deleteFlow.html"><i class="align-middle mr-1" data-feather="settings"></i> Settings & Privacy</a>
+                            <a class="dropdown-item" href="#"><i class="align-middle mr-1" data-feather="help-circle"></i> Help Center</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Log out</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="content">
+            <div class="container-fluid p-0">
+
+                <h1 class="h3 mb-3">网络流量分析</h1>
+
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="card flex-fill w-100">
+                            <div class="card-header">
+                                <h5 class="card-title">业务/恶意流量占比</h5>
+                                <!--<h6 class="card-subtitle text-muted">A line chart is a way of plotting data points on a line.</h6>-->
+                            </div>
+                            <div class="card-body">
+                                <div id="bing" style="height: 300px"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title">各类流量进入量</h5>
+
+
+                                <!--
+                                                                    <h6 class="card-subtitle text-muted">A bar chart provides a way of showing data values represented as vertical bars.</h6>
+                                -->
+                            </div>
+                            <div class="card-body">
+                                <div class="chart">
+                                    <div id="zhexian1" style="height: 300px"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h1 class="card-title">各类流量总量</h1>
+                            </div>
+                            <div class="card-body">
+                                <div id="zhuzhuang" style="height: 300px"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title">流量总进入量</h5>
+                                <h6 class="card-subtitle text-muted"></h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart chart-sm">
+                                    <div id="zhexian2" style="height: 300px"></div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </main>
+
+<!--        <footer class="footer">-->
+<!--            <div class="container-fluid">-->
+<!--                <div class="row text-muted">-->
+<!--                    <div class="col-6 text-left">-->
+<!--                        <p class="mb-0">-->
+<!--                            <a href="index2.html" class="text-muted"><strong>AdminKit Demo</strong></a> &copy;-->
+<!--                        </p>-->
+<!--                    </div>-->
+<!--                    <div class="col-6 text-right">-->
+<!--                        <ul class="list-inline">-->
+<!--                            <li class="list-inline-item">-->
+<!--                                <a class="text-muted" href="#">Support</a>-->
+<!--                            </li>-->
+<!--                            <li class="list-inline-item">-->
+<!--                                <a class="text-muted" href="#">Help Center</a>-->
+<!--                            </li>-->
+<!--                            <li class="list-inline-item">-->
+<!--                                <a class="text-muted" href="#">Privacy</a>-->
+<!--                            </li>-->
+<!--                            <li class="list-inline-item">-->
+<!--                                <a class="text-muted" href="#">Terms</a>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </footer>-->
+    </div>
+</div>
+
+
+<script src="js/vendor.js"></script>
+<script src="js/app.js"></script>
+
+<script type="text/javascript">
+
+    var dom = document.getElementById("bing");
+    var myChart = echarts.init(dom, null, {
+        renderer: 'canvas',
+        useDirtyRect: false
+    });
+    var app = {};
+
+    app.title = '环形图';
+
+    var option = {
+        tooltip: {
+            trigger: 'item',
+            formatter: "{a} <br/>{b}: {c} ({d}%)"
+        },
+        color:['#bbe2e8','#FFD83D'],
+        legend: {
+            orient: 'horizontal',
+            x: 'left',
+            data: ['业务流量',  '恶意流量']
+        },
+        series: [{
+            name: '访问来源',
+            // type: 'gauge',
+            detail: {
+                formatter: '{value}'
+            },
+            type: 'pie',
+            radius: ['30%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '20',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data: [{
+                value: [[${ safe }]] ,
+                name: '业务流量'
+                },
+
+                {
+                    value: [[${ unsafe }]] ,
+                    name: '恶意流量'
+                }
+            ]
+        }]
+    };
+    setInterval(function () {
+        option.series[0].data[0].value = 1;
+        myChart.setOption(option, true);
+    },2000);
+
+
+    if (option && typeof option === 'object') {
+        myChart.setOption(option, true);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+
+        // myChart.setOption(option, true);
+    // }
+
+    // setInterval(function () {
+    //     option.series[0].data[0].value = option.series[0].data[0].value;
+    //     myChart.setOption(option, true);
+    // },2000);
+    // for (let i = 0;i=1000 ; ++i) {
+    //
+    //     myChart.setOption(option, true);
+    //     i = 0;
+    // }
+    // window.setInterval(function () {
+    //     // var data = [test, 5, 10, 40, 20, 10];
+    //     // $.get("SQLTest.ashx",function(responseTxt,statusTxt,xhr)
+    //     // {
+    //     //     test=responseTxt;
+    //     //     //if (statusTxt == "success")alert(test);
+    //     //     if (statusTxt == "error")
+    //     //         alert("Error: " + xhr.status + ": " + xhr.statusText);
+    //     // });
+    //     // data = [test, 5, 10, 40, 20, 10];
+    //     $("#bing").load("#id=bing");
+    //     myChart.setOption(option, true);
+    //     // refreshData(data);
+    // },3000);
+    // onload=function()
+    // {
+    //     setTimeout(go ,3000);
+    // }
+    // function go()
+    // {
+    //     myChart.setOption(option, true);
+    // }
+    // onload;
+    // function refreshData(data){
+    //     if(!myChart){
+    //         return;
+    //     }
+    //
+    //     //更新数据
+    //     var option = myChart.getOption();
+    //     option.series[0].data = [[${ safe }]];
+    //     option.series[0].data = [[${ unsafe }]];
+    //     myChart.setOption(option, true);
+    // }
+    // window.setInterval(function () {
+    // refreshData(data);
+    // },3000);
+</script>
+
+<script type="text/javascript">
+    var dom = document.getElementById('zhexian1');
+    var myChart = echarts.init(dom, null, {
+        renderer: 'canvas',
+        useDirtyRect: false
+    });
+    var app = {};
+
+    var option;
+
+    option = {
+        title: {
+            // text: 'Stacked Area Chart'
+        },
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'cross',
+                label: {
+                    backgroundColor: '#6a7985'
+                }
+            }
+        },
+        legend: {
+            data: ['Email', 'Union Ads', 'Video Ads', 'Direct', 'Search Engine']
+        },
+        toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: [
+            {
+                type: 'category',
+                boundaryGap: false,
+                data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value'
+            }
+        ],
+        series: [
+            {
+                name: 'Email',
+                type: 'line',
+                stack: 'Total',
+                areaStyle: {},
+                emphasis: {
+                    focus: 'series'
+                },
+                data: [120, 132, 101, 134, 90, 230, 210]
+            },
+            {
+                name: 'Union Ads',
+                type: 'line',
+                stack: 'Total',
+                areaStyle: {},
+                emphasis: {
+                    focus: 'series'
+                },
+                data: [220, 182, 191, 234, 290, 330, 310]
+            },
+            {
+                name: 'Video Ads',
+                type: 'line',
+                stack: 'Total',
+                areaStyle: {},
+                emphasis: {
+                    focus: 'series'
+                },
+                data: [150, 232, 201, 154, 190, 330, 410]
+            },
+            {
+                name: 'Direct',
+                type: 'line',
+                stack: 'Total',
+                areaStyle: {},
+                emphasis: {
+                    focus: 'series'
+                },
+                data: [320, 332, 301, 334, 390, 330, 320]
+            },
+            {
+                name: 'Search Engine',
+                type: 'line',
+                stack: 'Total',
+                label: {
+                    show: true,
+                    position: 'top'
+                },
+                areaStyle: {},
+                emphasis: {
+                    focus: 'series'
+                },
+                data: [820, 932, 901, 934, 1290, 1330, 1320]
+            }
+        ]
+    };
+
+    if (option && typeof option === 'object') {
+        myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+</script>
+<script type="text/javascript">
+    var dom = document.getElementById('zhexian2');
+    var myChart = echarts.init(dom, null, {
+        renderer: 'canvas',
+        useDirtyRect: false
+    });
+    var app = {};
+
+    var option;
+
+    option = {
+        color: ['#80FFA5', '#00DDFF', '#37A2FF', '#FF0087', '#FFBF00'],
+        title: {
+            // text: 'Gradient Stacked Area Chart'
+        },
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'cross',
+                label: {
+                    backgroundColor: '#6a7985'
+                }
+            }
+        },
+        legend: {
+            data: ['Line 1', 'Line 2', 'Line 3', 'Line 4', 'Line 5']
+        },
+        toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: [
+            {
+                type: 'category',
+                boundaryGap: false,
+                data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value'
+            }
+        ],
+        series: [
+            {
+                name: 'Line 1',
+                type: 'line',
+                stack: 'Total',
+                smooth: true,
+                lineStyle: {
+                    width: 0
+                },
+                showSymbol: false,
+                areaStyle: {
+                    opacity: 0.8,
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                        {
+                            offset: 0,
+                            color: 'rgb(128, 255, 165)'
+                        },
+                        {
+                            offset: 1,
+                            color: 'rgb(1, 191, 236)'
+                        }
+                    ])
+                },
+                emphasis: {
+                    focus: 'series'
+                },
+                data: [140, 232, 101, 264, 90, 340, 250]
+            },
+            {
+                name: 'Line 2',
+                type: 'line',
+                stack: 'Total',
+                smooth: true,
+                lineStyle: {
+                    width: 0
+                },
+                showSymbol: false,
+                areaStyle: {
+                    opacity: 0.8,
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                        {
+                            offset: 0,
+                            color: 'rgb(0, 221, 255)'
+                        },
+                        {
+                            offset: 1,
+                            color: 'rgb(77, 119, 255)'
+                        }
+                    ])
+                },
+                emphasis: {
+                    focus: 'series'
+                },
+                data: [120, 282, 111, 234, 220, 340, 310]
+            },
+            {
+                name: 'Line 3',
+                type: 'line',
+                stack: 'Total',
+                smooth: true,
+                lineStyle: {
+                    width: 0
+                },
+                showSymbol: false,
+                areaStyle: {
+                    opacity: 0.8,
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                        {
+                            offset: 0,
+                            color: 'rgb(55, 162, 255)'
+                        },
+                        {
+                            offset: 1,
+                            color: 'rgb(116, 21, 219)'
+                        }
+                    ])
+                },
+                emphasis: {
+                    focus: 'series'
+                },
+                data: [320, 132, 201, 334, 190, 130, 220]
+            },
+            {
+                name: 'Line 4',
+                type: 'line',
+                stack: 'Total',
+                smooth: true,
+                lineStyle: {
+                    width: 0
+                },
+                showSymbol: false,
+                areaStyle: {
+                    opacity: 0.8,
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                        {
+                            offset: 0,
+                            color: 'rgb(255, 0, 135)'
+                        },
+                        {
+                            offset: 1,
+                            color: 'rgb(135, 0, 157)'
+                        }
+                    ])
+                },
+                emphasis: {
+                    focus: 'series'
+                },
+                data: [220, 402, 231, 134, 190, 230, 120]
+            },
+            {
+                name: 'Line 5',
+                type: 'line',
+                stack: 'Total',
+                smooth: true,
+                lineStyle: {
+                    width: 0
+                },
+                showSymbol: false,
+                label: {
+                    show: true,
+                    position: 'top'
+                },
+                areaStyle: {
+                    opacity: 0.8,
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                        {
+                            offset: 0,
+                            color: 'rgb(255, 191, 0)'
+                        },
+                        {
+                            offset: 1,
+                            color: 'rgb(224, 62, 76)'
+                        }
+                    ])
+                },
+                emphasis: {
+                    focus: 'series'
+                },
+                data: [220, 302, 181, 234, 210, 290, 150]
+            }
+        ]
+    };
+
+    if (option && typeof option === 'object') {
+        myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+</script>
+
+<!--<script type="text/javascript">-->
+<!--    var dom = document.getElementById('zhuzhuang');-->
+<!--    var myChart = echarts.init(dom, null, {-->
+<!--        renderer: 'canvas',-->
+<!--        useDirtyRect: false-->
+<!--    });-->
+<!--    var app = {};-->
+
+<!--    var option;-->
+
+<!--    const data = [];-->
+<!--    for (let i = 0; i < 5; ++i) {-->
+<!--        data.push(Math.round(Math.random() * 200));-->
+<!--    }-->
+<!--    option = {-->
+<!--        xAxis: {-->
+<!--            max: 'dataMax'-->
+<!--        },-->
+<!--        yAxis: {-->
+<!--            type: 'category',-->
+<!--            data: ['A', 'B', 'C', 'D', 'E'],-->
+<!--            inverse: true,-->
+<!--            animationDuration: 300,-->
+<!--            animationDurationUpdate: 300,-->
+<!--            max: 2 // only the largest 3 bars will be displayed-->
+<!--        },-->
+<!--        series: [-->
+<!--            {-->
+<!--                realtimeSort: true,-->
+<!--                name: 'X',-->
+<!--                type: 'bar',-->
+<!--                data: data,-->
+<!--                label: {-->
+<!--                    show: true,-->
+<!--                    position: 'right',-->
+<!--                    valueAnimation: true-->
+<!--                }-->
+<!--            }-->
+<!--        ],-->
+<!--        legend: {-->
+<!--            show: true-->
+<!--        },-->
+<!--        animationDuration: 0,-->
+<!--        animationDurationUpdate: 3000,-->
+<!--        animationEasing: 'linear',-->
+<!--        animationEasingUpdate: 'linear'-->
+<!--    };-->
+<!--    function run() {-->
+<!--        for (var i = 0; i < data.length; ++i) {-->
+<!--            if (Math.random() > 0.5) {-->
+<!--                data[i] += Math.round([[${ safe }]] );//Math.random() * 2000-->
+<!--            } else {-->
+<!--                data[i] += Math.round([[${ safe }]] );//Math.random() * 200-->
+<!--            }-->
+<!--        }-->
+<!--        myChart.setOption({-->
+<!--            series: [-->
+<!--                {-->
+<!--                    type: 'bar',-->
+<!--                    data-->
+<!--                }-->
+<!--            ]-->
+<!--        });-->
+<!--    }-->
+<!--    setTimeout(function () {-->
+<!--        run();-->
+<!--    }, 0);-->
+<!--    setInterval(function () {-->
+<!--        run();-->
+<!--    }, 3000);-->
+
+<!--    if (option && typeof option === 'object') {-->
+<!--        myChart.setOption(option);-->
+<!--    }-->
+
+<!--    window.addEventListener('resize', myChart.resize);-->
+<!--</script>-->
+<script type="text/javascript">
+    var dom = document.getElementById('zhuzhuang');
+    var myChart = echarts.init(dom, null, {
+        renderer: 'canvas',
+        useDirtyRect: false
+    });
+    var app = {};
+
+    var option;
+
+    option = {
+        dataset: {
+            source: [
+                ['score', 'amount', 'product'],
+                [89.3, 58212, 'Matcha Latte'],
+                [57.1, 78254, 'Milk Tea'],
+                [74.4, 41032, 'Cheese Cocoa'],
+                [50.1, 12755, 'Cheese Brownie'],
+                [89.7, 20145, 'Matcha Cocoa'],
+                [68.1, 79146, 'Tea'],
+                [19.6, 91852, 'Orange Juice'],
+                [10.6, 101852, 'Lemon Juice'],
+
+                [89.3, 58212, '1'],
+                [57.1, 78254, '2'],
+                [74.4, 41032, '3'],
+                [50.1, 12755, '4'],
+                [89.7, 20145, '5'],
+                [68.1, 79146, '6'],
+                [19.6, 91852, '7'],
+                [10.6, 101852, '8'],
+
+                [19.6, 91852, 'a'],
+                [10.6, 101852, 'b'],
+
+                [32.7, 20112, 'Walnut Brownie']
+            ]
+        },
+        grid: { containLabel: true },
+        xAxis: { name: 'amount' },
+        yAxis: { type: 'category' },
+        visualMap: {
+            orient: 'horizontal',
+            left: 'center',
+            min: 10,
+            max: 100,
+            text: ['High Score', 'Low Score'],
+            // Map the score column to color
+            dimension: 0,
+            inRange: {
+                color: ['#65B581', '#FFCE34', '#FD665F']
+            }
+        },
+        series: [
+            {
+                type: 'bar',
+                encode: {
+                    // Map the "amount" column to X axis.
+                    x: 'amount',
+                    // Map the "product" column to Y axis
+                    y: 'product'
+                }
+            }
+        ]
+    };
+
+    if (option && typeof option === 'object') {
+        myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+
+
+    // const myChart = this.$echarts.init('zhuzhuang');
+
+    // myChart.clear();
+    //
+    // myChart.setOption(option, true);
+    //
+    // window.onresize = function () {
+    //
+    //     mycharts.resize();
+    //
+    // };
+
+</script>
+
+<!--<script type="text/javascript">      //实现自动刷新iframe内容开始.-->
+<!--setInterval(function() {         //这里用setTimeout代替，解决了setInterval进行ajax请求的页面长时间打开会出现页面卡死，因为setInterval会消耗网页内存，如果不清理会一直消耗直到网页卡死。-->
+<!--    $("#bing").load("#id=bing");-->
+<!--}, 10000);-->
+<!--</script>  &lt;!&ndash;实现自动刷新iframe内容结束.&ndash;&gt;-->
+<!--<script>-->
+
+<!--    $(document).ready(function() {//页面加载完成后执行此函数-->
+
+<!--        var tpid=<%=pid%>;-->
+
+<!--    fresh();-->
+
+<!--    });-->
+
+<!--    function fresh() {-->
+
+<!--        var tpid=<%=pid%>;-->
+
+<!--//alert(tpid);-->
+
+<!--    $.ajax({-->
+
+<!--            type : "POST",//-->
+
+<!--                url : "genxin.do",//请求地址-->
+
+<!--                dataType : 'json',//传输类型-->
+
+<!--                data : "pid=" + tpid,//输出数据-->
+
+<!--                success : function(data) {//服务器返回的值，这里面是你要刷新的东西-->
+
+<!--                var table = $(".table");-->
+
+<!--                table.empty();-->
+
+<!--                table.append("<tr><td>药品ID</td><td>药名</td><td>药品需重</td><td>已取重量</td><td>抓药进度</td></tr>");-->
+
+<!--                $.each(data,function(index,val){//它可以遍历一维数组、多维数组、DOM, JSON 等等格式-->
+
+<!--                    table.append("<tr><td>"+val.mid+"</td><td>"+val.mname+"</td><td>"+val.mweight+"</td><td>"+val.yiqu+"</td><td>"+val.jindu+"</td></tr>");-->
+
+<!--                });-->
+
+<!--            },error:function(){-->
+
+<!--                alert("error");-->
+
+<!--            }-->
+
+<!--        });-->
+
+<!--    setTimeout("fresh()", 1000);//每隔一秒递归调用此函数，实现刷新的功能。-->
+
+<!--    }-->
+
+<!--</script>-->
+
+<!--<script>-->
+<!--    setInterval(function() {-->
+<!--        $("#container").load(location.href+" #container>*","");-->
+<!--    }, 1000);-->
+<!--</script>-->
+<!--<script>-->
+<!--    $("#waitWork").click(function(){-->
+<!--        var url = "请求地址";-->
+<!--        var data = {type:1};-->
+<!--        $.ajax({-->
+<!--            type : "get",-->
+<!--            async : false, //同步请求-->
+<!--            url : url,-->
+<!--            data : data,-->
+<!--            timeout:1000,-->
+<!--            success:function(dates){-->
+<!--                //alert(dates);-->
+<!--                $("#container").html(dates);//要刷新的div-->
+<!--            },-->
+<!--            error: function() {-->
+<!--                // alert("失败，请稍后再试！");-->
+<!--            }-->
+<!--        });-->
+<!--    });-->
+<!--</script>-->
+<!--<script language= "JavaScript">function myrefresh()-->
+<!--{undefined-->
+<!--    window.location.reload();-->
+<!--}-->
+<!--setTimeout('myrefresh()',1000);-->
+<!--</script>-->
+</body>
+
+</html>
